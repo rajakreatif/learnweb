@@ -1,49 +1,85 @@
 <html>
 
 <head>
-  <title>masuk bang</title>
+  <title>Leran Web</title>
   <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
-  <script src="Asset/js/bootstrap.min.js"></script>
   <style>
     .post {
       margin: 20 0 20 0;
-    }
-
-    .hover {}
-
-    .hover:hover {
-      width: 125%;
     }
 
     .post-featured {
       position: sticky;
       top: 5px;
     }
+
+
+    .Image {
+      position: relative;
+      overflow: hidden;
+      margin: 0px 0px 40px;
+      padding: 15px;
+    }
+
+    .image img {
+      transition: transform .2s;
+    }
+
+    .image-featured {
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-width: 0;
+      border-style: solid;
+      background: transparent;
+      border-color: white #2b2b2c;
+      z-index: 1;
+      -webkit-transition: border-width 0.2s ease-out;
+      -moz-transition: border-width 0.2s ease-out;
+      -ms-transition: border-width 0.2s ease-out;
+      -o-transition: border-width 0.2s ease-out;
+      transition: border-width 0.2s ease-out;
+    }
+
+    .image:hover .image-featured {
+      border-width: 0 50px 50px 0;
+    }
+
+    .image:hover img {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="Asset/img/download.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Learn Web
+    </a>
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Design Resources</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Process</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">Action 1</a>
-            <a class="dropdown-item" href="#">Action 2</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inspiration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Design</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -53,11 +89,12 @@
     </div>
   </nav>
   <div class="container-fluid">
-    <div class="row " style="padding: 50;">
+    <div class="row" style="padding: 50; margin-top: 50;">
       <div class="col-md-6">
         <div class="post-featured">
-          <div style="width: 100%; height: 250px; overflow: hidden">
-            <img src="Asset/img/DLFpresenting-810x804.jpg" class="img-fluid hover" style="width: 100%;" alt="">
+          <div style="width: 100%; height: 250px; padding: 0px;" class="image">
+            <span class="image-featured"></span>
+            <img src="Asset/img/DLFpresenting-810x804.jpg" class="img-fluid" style="width: 100%;">
           </div>
           <h1>Lorem Ipsum</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -72,8 +109,9 @@
       <div class="col-md-6">
         <h4 style="margin: 10 0 20 0;"><strong>Recent Stories</strong></h4>
         <div class="row post">
-          <img src="Asset/img/DLFpresenting-810x804.jpg" class="col-md-4 hover" style="width: 100%; height: 100%"
-            alt="">
+          <div class="col-md-4" style="overflow: hidden;">
+            <img src="Asset/img/DLFpresenting-810x804.jpg" style="width: 100%; overflow: hidden;" class="image" alt="">
+          </div>
           <div class="col-md-8">
             <p class="tag">
               Tag
@@ -94,26 +132,26 @@
         <h3 class="text-white">Judul</h3>
         <p class="text-white">author</p class="text-white">
       </div>
-      <div class="col-8">
+      <div class="col-8" style="overflow: hidden;">
         <img src="Asset/img/E5-300x169.jpg"
-          class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+          class="image img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
           style="width: 100%;">
       </div>
     </div>
     <div class="row" style="padding: 50;">
-      <div class="col-md-6">
-        <img src="Asset/img/craft-time-feature-810x810.jpg" style="width: 100%;" alt="">
+      <div class="col-md-6" style="overflow: hidden;">
+        <img src="Asset/img/craft-time-feature-810x810.jpg" class="image" style="width: 100%;" alt="">
       </div>
       <div class="col-md-6">
-        <h6>tag</h6>
+        <h6 class="tag">tag</h6>
         <h1>Judul</h1>
         <h6>Waktu</h6>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="row post">
-            <div class="col-4">
-              <img src="Asset/img/DLFpresenting-810x804.jpg" class="img-fluid" style="width: 100%; alt="">
+            <div class="col-4" style="overflow: hidden;">
+              <img src="Asset/img/DLFpresenting-810x804.jpg" class="image img-fluid" style="width: 100%;">
             </div>
             <div class=" col-8">
               <p class="tag">
@@ -130,5 +168,6 @@
     </div>
   </div>
 </body>
+<script src="Asset/js/bootstrap.min.js"></script>
 
 </html>

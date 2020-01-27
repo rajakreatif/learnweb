@@ -1,60 +1,14 @@
 <html>
 
 <head>
-  <title>Leran Web</title>
+  <title>Learn Web</title>
   <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
-  <style>
-    .post {
-      margin: 20 0 20 0;
-    }
-
-    .post-featured {
-      position: sticky;
-      top: 5px;
-    }
-
-
-    .Image {
-      position: relative;
-      overflow: hidden;
-      margin: 0px 0px 40px;
-      padding: 15px;
-    }
-
-    .image img {
-      transition: transform .2s;
-    }
-
-    .image-featured {
-      width: 0px;
-      height: 0px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      border-width: 0;
-      border-style: solid;
-      background: transparent;
-      border-color: white #2b2b2c;
-      z-index: 1;
-      -webkit-transition: border-width 0.2s ease-out;
-      -moz-transition: border-width 0.2s ease-out;
-      -ms-transition: border-width 0.2s ease-out;
-      -o-transition: border-width 0.2s ease-out;
-      transition: border-width 0.2s ease-out;
-    }
-
-    .image:hover .image-featured {
-      border-width: 0 50px 50px 0;
-    }
-
-    .image:hover img {
-      transform: scale(1.05);
-    }
-  </style>
+  <link rel="stylesheet" href="Asset/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
     <a class="navbar-brand" href="#">
       <img src="Asset/img/download.svg" width="30" height="30" class="d-inline-block align-top" alt="">
       Learn Web
@@ -92,34 +46,44 @@
     <div class="row" style="padding: 50; margin-top: 50;">
       <div class="col-md-6">
         <div class="post-featured">
-          <div style="width: 100%; height: 250px; padding: 0px;" class="image">
+          <div style="width: 100%; height: 250px;" class="image">
             <span class="image-featured"></span>
-            <img src="Asset/img/DLFpresenting-810x804.jpg" class="img-fluid" style="width: 100%;">
+            <img src="Asset/img/DLFpresenting-810x804.jpg" class="img">
           </div>
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus
-            PageMaker including versions of Lorem Ipsum.</p>
+          <a href=""><span class="tag">Tag</span></a>
+          <a href="">
+            <h1><strong>Lorem Ipsum</strong></h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+              Aldus
+              PageMaker including versions of Lorem Ipsum.</p>
+          </a>
+          <p class="author text-feature">by Someone</p>
         </div>
       </div>
       <div class="col-md-6">
         <h4 style="margin: 10 0 20 0;"><strong>Recent Stories</strong></h4>
         <div class="row post">
-          <div class="col-md-4" style="overflow: hidden;">
-            <img src="Asset/img/DLFpresenting-810x804.jpg" style="width: 100%; overflow: hidden;" class="image" alt="">
+          <div class="col-md-4">
+            <div style="width: 100%;" class="image">
+              <span class="image-featured"></span>
+              <img src="Asset/img/DLFpresenting-810x804.jpg" class="img">
+            </div>
           </div>
           <div class="col-md-8">
-            <p class="tag">
-              Tag
-            </p>
+            <a href="">
+              <span class="tag text-feature">
+                Tag
+              </span>
+            </a>
             <p class="title">
-              <H4><strong>Lorem Ipsum</strong></H4>
+              <H4><strong><span class="title">Lorem Ipsum</span></strong></H4>
             </p>
-            <p class="author">by Someone</p>
+            <p class="author text-feature">by Someone</p>
           </div>
         </div>
       </div>
@@ -132,35 +96,45 @@
         <h3 class="text-white">Judul</h3>
         <p class="text-white">author</p class="text-white">
       </div>
-      <div class="col-8" style="overflow: hidden;">
-        <img src="Asset/img/E5-300x169.jpg"
-          class="image img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-          style="width: 100%;">
+      <div style="width: 100%;" class="image col-8">
+        <img src="Asset/img/E5-300x169.jpg" class="img" style="width: 100%;">
       </div>
     </div>
     <div class="row" style="padding: 50;">
-      <div class="col-md-6" style="overflow: hidden;">
-        <img src="Asset/img/craft-time-feature-810x810.jpg" class="image" style="width: 100%;" alt="">
+      <div class="col-md-6">
+        <div style="width: 100%;" class="image">
+          <span class="image-featured"></span>
+          <img src="Asset/img/craft-time-feature-810x810.jpg" class="img">
+        </div>
       </div>
       <div class="col-md-6">
-        <h6 class="tag">tag</h6>
-        <h1>Judul</h1>
-        <h6>Waktu</h6>
+        <a href="">
+          <span class="tag text-feature">
+            Tag
+          </span>
+        </a>
+        <H4><strong><span class="title">Lorem Ipsum</span></strong></H4>
+        <p class="author text-feature">by Someone</p>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="row post">
-            <div class="col-4" style="overflow: hidden;">
-              <img src="Asset/img/DLFpresenting-810x804.jpg" class="image img-fluid" style="width: 100%;">
+            <div class="col-md-4">
+              <div style="width: 100%;" class="image">
+                <span class="image-featured"></span>
+                <img src="Asset/img/DLFpresenting-810x804.jpg" class="img">
+              </div>
             </div>
-            <div class=" col-8">
-              <p class="tag">
-                Tag
-              </p>
+            <div class="col-md-8">
+              <a href="">
+                <span class="tag text-feature">
+                  Tag
+                </span>
+              </a>
               <p class="title">
-                <H4><strong>Lorem Ipsum</strong></H4>
+                <H4><strong><span class="title">Lorem Ipsum</span></strong></H4>
               </p>
-              <p class="author">by Someone</p>
+              <p class="author text-feature">by Someone</p>
             </div>
           </div>
         </div>

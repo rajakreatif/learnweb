@@ -1,3 +1,3 @@
 <footer class="container">
-        <p style="text-align: center;">&copy; Learn Webr </p>
+        <p style="text-align: center;">&copy; Learn Web </p>
       </footer>

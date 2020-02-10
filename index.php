@@ -9,6 +9,7 @@
 
 <body>
 <?php
+
   include 'header.php';
   require 'body.php';
   include 'footer.php';

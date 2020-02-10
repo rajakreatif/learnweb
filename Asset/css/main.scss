@@ -99,10 +99,8 @@ body {
 
 .video-featured {
     margin-left: -3.2rem;
-}
 
-@media only screen and (max-width: 992px) {
-    .video-featured {
+    @media only screen and (max-width: 992px) {
         margin-left: -15px;
         padding-left: -15px;
         margin-right: -15px;

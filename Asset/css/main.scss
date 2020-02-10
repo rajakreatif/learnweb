@@ -1,0 +1,111 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.post {
+    margin: 20 0 20 0;
+
+    .post-featured {
+        position: sticky;
+        top: 5px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+
+.Image {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 20px;
+    padding: 0px;
+
+    .image-featured {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: 0;
+        border-style: solid;
+        background: transparent;
+        border-color: white #2b2b2c;
+        z-index: 1;
+        -webkit-transition: border-width 0.2s ease-out;
+        -moz-transition: border-width 0.2s ease-out;
+        -ms-transition: border-width 0.2s ease-out;
+        -o-transition: border-width 0.2s ease-out;
+        transition: border-width 0.2s ease-out;
+    }
+
+    .img {
+        width: 100%;
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
+
+            .image-featured {
+                border-width: 0 30px 30px 0;
+            }
+        }
+    }
+}
+
+.content {
+    .title {
+        width: 100%;
+        background-image: linear-gradient(transparent calc(100% - 3px), black 10px);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition: background-size .6s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+
+
+    .text-feature {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    .tag {
+        text-transform: uppercase;
+        color: palevioletred;
+        font-size: smaller;
+        font-weight: 800;
+    }
+
+    .author {
+        text-transform: uppercase;
+        color: gray;
+        font-size: xx-small;
+    }
+}
+
+
+.video-featured {
+    margin-left: -3.2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .video-featured {
+        margin-left: -15px;
+        padding-left: -15px;
+        margin-right: -15px;
+        width: 104.5% !important;
+    }
+}

@@ -1,4 +1,4 @@
-<html !doctype>
+<html>
 
 <head>
   <title>Learn Web</title>
@@ -9,9 +9,9 @@
 
 <body>
 <?php
-include "header.php";
-include "body.php";
-include "footer.php";
+  include 'header.php';
+  require 'body.php';
+  include 'footer.php';
 ?>
 </body>
 <script src="Asset/js/bootstrap.min.js"></script>

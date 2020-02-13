@@ -2,7 +2,7 @@ const {
     src,
     dest
 } = require('gulp');
-const sass = require('gulp-sass');
+const sass = requirez('gulp-sass');
 
 function css() {
     return src('Asset/css/*.scss')

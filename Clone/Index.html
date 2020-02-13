@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <link rel="stylesheet" href="Asset/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Asset/Css/styles.css">
+    <link rel="stylesheet" href="Asset/Css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Events <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Press Release</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="row pt-4">
+            <div class="col-md-4 p-5">
+                <div class="form-group">
+                    <select id="content-filter-byYear" class="form-control" name="">
+                        <option>Browse by Years</option>
+                    </select>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">All</li>
+                    <li class="list-group-item active">2019</li>
+                    <li class="list-group-item">2018</li>
+                    <li class="list-group-item">2017</li>
+                    <li class="list-group-item">2016</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card p-1">
+                            <img class="card-img-top" src="Asset/img/377830943b1594e3dbb980fbf134c465.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">Content</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-1">
+                            <img class="card-img-top" src="Asset/img/377830943b1594e3dbb980fbf134c465.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">Content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Asset/js/jquery-3.4.1.min.js"></script>
+<script src="Asset/js/bootstrap.min.js"></script>
+<script src="Asset/js/fontawesome.min.js"></script>
+
+</html>

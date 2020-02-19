@@ -1,0 +1,33 @@
+.content-thumb {
+    width: 100%;
+    height: 50vh;
+}
+
+.content-header {
+    height: 50vh;
+    position: relative;
+    background-color: aqua;
+}
+
+
+.content-button-group {
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+    z-index: 1;
+    background-color: white;
+}
+
+.content-tag {
+    font-weight: lighter;
+    color: red;
+}
+
+.content-title {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.content-details {
+    font-weight: bold;
+}

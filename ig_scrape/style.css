@@ -1,0 +1,7 @@
+.instagram-post-caption {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

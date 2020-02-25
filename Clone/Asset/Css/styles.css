@@ -31,3 +31,36 @@
 .content-details {
     font-weight: bold;
 }
+
+.share-icons {
+    border-bottom: 1px gray solid;
+    padding: 0 0 1em 0;
+}
+
+.share-icons i {
+    color: gray;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.3em;
+    display: block;
+    margin: 1em;
+
+}
+
+.button {
+    border-radius: 0px;
+    color: white;
+    padding: 1rem;
+}
+
+.book-desc {
+    color: gray;
+}
+
+.red {
+    background-color: rgb(211, 35, 35);
+}

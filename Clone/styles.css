@@ -1,0 +1,66 @@
+.content-thumb {
+    width: 100%;
+    height: 50vh;
+}
+
+.content-header {
+    height: 50vh;
+    position: relative;
+    background-color: aqua;
+}
+
+
+.content-button-group {
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+    z-index: 1;
+    background-color: white;
+}
+
+.content-tag {
+    font-weight: lighter;
+    color: red;
+}
+
+.content-title {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.content-details {
+    font-weight: bold;
+}
+
+.share-icons {
+    border-bottom: 1px gray solid;
+    padding: 0 0 1em 0;
+}
+
+.share-icons i {
+    color: gray;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.3em;
+    display: block;
+    margin: 1em;
+
+}
+
+.button {
+    border-radius: 0px;
+    color: white;
+    padding: 1rem;
+}
+
+.book-desc {
+    color: gray;
+}
+
+.red {
+    background-color: rgb(211, 35, 35);
+}

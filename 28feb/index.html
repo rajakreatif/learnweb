@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://kit.fontawesome.com/1b9356a336.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ul class="nav content-nav my-2" id="myTab" role="tablist">
+				<div class="slider"></div>
+				<li class="nav-item">
+					<a
+						class="nav-link active"
+						id="home-tab"
+						data-toggle="tab"
+						href="#overview"
+						role="tab"
+						aria-controls="home"
+						aria-selected="true"
+						>Overview</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						id="profile-tab"
+						data-toggle="tab"
+						href="#about"
+						role="tab"
+						aria-controls="profile"
+						aria-selected="false"
+						>About</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						id="contact-tab"
+						data-toggle="tab"
+						href="#learn"
+						role="tab"
+						aria-controls="contact"
+						aria-selected="false"
+						>Learn</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						id="home-tab"
+						data-toggle="tab"
+						href="#admissions"
+						role="tab"
+						aria-controls="home"
+						aria-selected="true"
+						>Admissions</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						id="profile-tab"
+						data-toggle="tab"
+						href="#news"
+						role="tab"
+						aria-controls="profile"
+						aria-selected="false"
+						>News</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						id="contact-tab"
+						data-toggle="tab"
+						href="#contact"
+						role="tab"
+						aria-controls="contact"
+						aria-selected="false"
+						>Contact</a
+					>
+				</li>
+			</ul>
+			<div class="tab-content content-body" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="nav-home-tab">
+					<div class="row justify-content-between">
+						<div class="col-md-8">
+							<div class="content-title">What sets Broadrick apart?</div>
+							<p class="content-text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, sed cupiditate quod
+								eaque culpa voluptas eum non expedita necessitatibus itaque accusamus. Beatae, ex
+								consequuntur in error dolorum cupiditate voluptates dolore. Lorem ipsum dolor sit, amet
+								consectetur adipisicing elit. Iure, sed cupiditate quod eaque culpa voluptas eum non
+								expedita necessitatibus itaque accusamus. Beatae, ex consequuntur in error dolorum
+								cupiditate voluptates dolore.
+							</p>
+							<p class="content-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore quam veniam
+								quos perspiciatis commodi, cumque laboriosam maiores sequi accusantium incidunt sapiente
+								earum, atque ipsam harum vitae dicta, tenetur totam.
+							</p>
+						</div>
+						<div class="col-md-3">
+							<div class="content-contact">
+								<div class="name">
+									Broadrick
+								</div>
+								<span class="text">S1 Broadrick Road, Singapore 439501 </span>
+								<span class="details">Visit Us</span>
+
+								<a href="#" class="directions text"
+									><i class="fas fa-map-marker-alt"></i> Get Directions</a
+								>
+								<span class="details">Phone</span>
+								<span class="text">+65 6346 8922</span>
+								<select class="text" name="" id="">
+									<option disabled selected>Other enquery contacts</option>
+									<option></option>
+									<option></option>
+								</select>
+								<span class="details">Email</span>
+								<span class="text">broadrick@etonhouse.edu.org</span>
+							</div>
+							<div class="btn-group mt-4" role="group" aria-label="">
+								<a name="" id="" class="btn button red" href="#" role="button">BOOK A TOUR</a>
+								<a name="" id="" class="btn button white" href="#" role="button">COMPARE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="nav-profile-tab">
+					<div class="content-title">What sets Broadrick apart?</div>
+					<p class="content-text">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, sed cupiditate quod eaque culpa
+						voluptas eum non expedita necessitatibus itaque accusamus. Beatae, ex consequuntur in error
+						dolorum cupiditate voluptates dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Iure, sed cupiditate quod eaque culpa voluptas eum non expedita necessitatibus itaque accusamus.
+						Beatae, ex consequuntur in error dolorum cupiditate voluptates dolore.
+					</p>
+					<p class="content-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore quam veniam quos
+						perspiciatis commodi, cumque laboriosam maiores sequi accusantium incidunt sapiente earum, atque
+						ipsam harum vitae dicta, tenetur totam.
+					</p>
+				</div>
+				<div class="tab-pane fade" id="learn" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+				<div class="tab-pane fade" id="admissions" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+				<div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					<div class="content-contact">
+						<div class="name">
+							Broadrick
+						</div>
+						<span class="text">S1 Broadrick Road, Singapore 439501 </span>
+						<span class="details">Visit Us</span>
+
+						<a href="#" class="directions text"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
+						<span class="details">Phone</span>
+						<span class="text">+65 6346 8922</span>
+						<select class="text" name="" id="">
+							<option disabled selected>Other enquery contacts</option>
+							<option></option>
+							<option></option>
+						</select>
+						<span class="details">Email</span>
+						<span class="text">broadrick@etonhouse.edu.org</span>
+					</div>
+					<div class="btn-group mt-4" role="group" aria-label="">
+						<a name="" id="" class="btn button red" href="#" role="button">BOOK A TOUR</a>
+						<a name="" id="" class="btn button white" href="#" role="button">COMPARE</a>
+					</div>
+				</div>
+			</div>
+			<div class="row view">
+				<div class="col-md-8 testimonial-img"></div>
+				<div class="col-md-4 p-0">
+					<div class="testimonial-content">
+						<div class="testimonial-content-text py-4">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut veniam odit cupiditate hic
+							asperiores, quidem eius dolore iste,
+						</div>
+					</div>
+					<div class="tour"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>
